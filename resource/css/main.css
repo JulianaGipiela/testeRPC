@@ -204,7 +204,7 @@ h2 {
   .textClassification .textTitleContent:not(:first-child) {
     margin-left: 10px;
   }
- 
+  
   .textContent {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -325,6 +325,7 @@ h2 {
  @media screen and (max-width: 1240px) {
   .width40 {
     width: 100%;
+    margin: 0px !important;
   }
   .width60 {
     width: 100%;
@@ -337,6 +338,10 @@ h2 {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+  }
+
+  .configP {
+    margin-top: 0px;  
   }
 }
 
