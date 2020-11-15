@@ -26,12 +26,12 @@
         if($now < $end && $now >= $start && $isToDay) {
             $estaNoAr = true;
         }
-
+        $description = isset($entry->custom_info->Resumos->ResumoImprensa) && $entry->custom_info->Resumos->ResumoImprensa != "" ? $entry->custom_info->Resumos->ResumoImprensa : $entry->description; 
         $aux = array(
             "humanStartTime" =>  $start,
             "humanEndTime" => $end,
             "tituloPrograma" => $entry->title,
-            "descricao" => $entry->description,
+            "descricao" => $description,
             "sinopse" => $entry->custom_info->Resumos->Sinopse,
             "idade" => $entry->custom_info->Classificacao->Idade,
             "sexo" => $entry->custom_info->Classificacao->Sexo,
