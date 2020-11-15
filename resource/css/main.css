@@ -215,8 +215,8 @@ h2 {
   }
 
   .img-content {
-    width: 370px;
-    height: 250px
+    width: 300px;
+    height: auto;
   } 
 
   .img-logo {
@@ -262,7 +262,7 @@ h2 {
   }
   
   .content {
-    padding: 0 18px;
+    padding: 0px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -315,8 +315,8 @@ h2 {
    color: #c0c0c0;
  }
 
- .width39 {
-  width: 39%;
+ .width40 {
+  width: 40%;
  }
 
  .width60 {
