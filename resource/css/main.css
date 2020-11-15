@@ -52,18 +52,15 @@ h2 {
   .flex-container-lista {
     display: flex;
     align-items: center;   
-    border-bottom-color: #333333;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
     border-top-color: #333333;
     border-top-width: 1px;
     border-top-style: solid;
+    padding-top: 10px;
   }
   
   .flex-container-lista > div {
     color: #333333;
     text-align: center;
-    line-height: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'Roboto', sans-serif;    
@@ -92,7 +89,6 @@ h2 {
   .flex-container-conteudo > div {
     color: #333333;
     text-align: left;
-    line-height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
@@ -183,19 +179,18 @@ h2 {
 
   .textHour {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
     font-weight: bold;
     color: #333333;
     position: relative;
-    line-height: 60px;
   }
 
   .textTitle {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
     color: #333333;
     position: relative;
     line-height: 60px;
@@ -295,14 +290,17 @@ h2 {
   
  .flex-grow2 {
     flex-grow: 2;
+    width: 5%;
  }
 
  .flex-grow1 {
     flex-grow: 1;
+    width: 5%;
  }
 
  .flex-grow5 {
     flex-grow: 5;
+    width: 50%;
  }
 
 .iconArrow a:link, 
@@ -316,3 +314,20 @@ h2 {
 .iconArrowDisabled a:visited{
    color: #c0c0c0;
  }
+
+ .width39 {
+  width: 39%;
+ }
+
+ .width60 {
+  width: 60%;
+ }
+
+ @media screen and (max-width: 1240px) {
+  .width39 {
+    width: 100%;
+  }
+  .width60 {
+    width: 100%;
+  }
+}
