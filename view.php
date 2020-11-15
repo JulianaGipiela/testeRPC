@@ -65,15 +65,16 @@
                 <div class="width40"><img src="<?php echo $p["imgPrograma"]!=null ? $p["imgPrograma"] : "https://s2.glbimg.com/7Vhaxhj9PGP2p_fadpUh21SRQQ4=/s.glbimg.com/og/rg/f/original/2017/01/30/banner.png";?>" class="img-content"></div>
                 <div class="width60">
                     <p>                       
+                        <span class="textTitleContent up"><?php echo $p["tituloPrograma"];?></span>
+                    </p>
+
+                    <p>                       
                         <span class="textContent"><?php echo $p["descricao"];?></span>
                     </p>
                     <p>
                         <span class="textContent"><?php echo $p["sinopse"]==null ? $p["sinopse"]:"Sem Sinopse";?></span>
                     </p>
-                    <p>
-                        <span class="textTitleContent"> Classificação </span>
-                    </p>
-                    <p>
+                    <p class="textClassification">
                         <span class="textTitleContent"> Idade: </span>
                         <span class="textContent"><?php echo $p["idade"];?></span>
                         <span class="textTitleContent"> Sexo: </span>

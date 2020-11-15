@@ -82,7 +82,6 @@ h2 {
 
   .flex-container-conteudo {
     display: flex;
-    align-items: stretch;   
     flex-wrap: wrap;
   }
   
@@ -199,10 +198,12 @@ h2 {
     font-size: 14px;
     text-align: left;
     font-weight: bold;
-    color: #333333;
-    margin-left: 10px;
+    color: #333333;   
   }
 
+  .textClassification .textTitleContent:not(:first-child) {
+    margin-left: 10px;
+  }
  
   .textContent {
     font-family: 'Roboto', sans-serif;
@@ -317,7 +318,8 @@ h2 {
  }
 
  .width60 {
-  width: 60%;
+  width: 59%;
+  padding-left: 10px;
  }
 
  @media screen and (max-width: 1240px) {
@@ -326,6 +328,7 @@ h2 {
   }
   .width60 {
     width: 100%;
+    padding-left: 10px;
   }
   .time {
     width: 30px;
@@ -349,4 +352,8 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.up {
+  text-transform: uppercase;
 }
