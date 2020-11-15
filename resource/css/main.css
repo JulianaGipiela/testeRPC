@@ -192,8 +192,6 @@ h2 {
     text-align: left;
     font-weight: bold;
     color: #333333;
-    position: relative;
-    line-height: 60px;
   }
 
   .textTitleContent {
@@ -288,9 +286,8 @@ h2 {
     padding: 8px 16px;
   }
   
- .flex-grow2 {
-    flex-grow: 2;
-    width: 5%;
+ .time {
+    width: 100px;
  }
 
  .flex-grow1 {
@@ -324,12 +321,15 @@ h2 {
  }
 
  @media screen and (max-width: 1240px) {
-  .width39 {
+  .width40 {
     width: 100%;
   }
   .width60 {
     width: 100%;
   }
+  .time {
+    width: 30px;
+ }
 }
 
 .textRed {
@@ -338,4 +338,10 @@ h2 {
 
 .marginLive {
   margin-left: 10px;
+}
+
+.flex-group-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

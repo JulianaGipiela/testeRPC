@@ -52,10 +52,11 @@
       
         <button type="button" class="collapsible">
             <div class="flex-container-lista">                
-                <div class="margin-10 flex-grow2"><div class="textHour"><?php echo $p["humanStartTime"]; ?> às <?php echo $p["humanEndTime"]; ?><span class="textRed"><?php echo $p["noAr"]? " - Ao Vivo" : "";?></span></div></div>
-                <div class="margin-10 flex-grow1"><img src="<?php echo $p["logoPrograma"];?>" class="img-logo-prog"></div>
-                <div class="margin-10 flex-grow5"><div class="textTitle"><?php echo $p["tituloPrograma"];?></div></div>
-                    
+                <div class="margin-10 time"><div class="textHour"><?php echo $p["humanStartTime"]; ?> às <?php echo $p["humanEndTime"]; ?><span class="textRed"><?php echo $p["noAr"]? "<br/> Ao Vivo" : "";?></span></div></div>
+                <div class="flex-group-time">
+                    <div class="margin-10"><img src="<?php echo $p["logoPrograma"];?>" class="img-logo-prog"></div>
+                    <div class="margin-10"><div class="textTitle"><?php echo $p["tituloPrograma"];?></div></div>
+                </div>    
             </div>  
         </button>
         
