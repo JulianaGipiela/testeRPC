@@ -29,7 +29,7 @@
         
         <div class="flex-container-now">     
             <div><img src="<?php echo $toNow["imgPrograma"]; ?>" class="img-now"></div>
-            <div>
+            <div class="marginLive">
                 <h2 class="titleNow-content-hr">Passando Agora</h2>   
                 <h2 class="titleNow-content"> <?php echo $toNow["tituloPrograma"]; ?></h2>
             </div>  
@@ -52,7 +52,7 @@
       
         <button type="button" class="collapsible">
             <div class="flex-container-lista">                
-                <div class="margin-10 flex-grow2"><div class="textHour"><?php echo $p["humanStartTime"]; ?> às <?php echo $p["humanEndTime"]; ?><?php echo $p["noAr"]? " - Ao Vivo" : "";?></div></div>
+                <div class="margin-10 flex-grow2"><div class="textHour"><?php echo $p["humanStartTime"]; ?> às <?php echo $p["humanEndTime"]; ?><span class="textRed"><?php echo $p["noAr"]? " - Ao Vivo" : "";?></span></div></div>
                 <div class="margin-10 flex-grow1"><img src="<?php echo $p["logoPrograma"];?>" class="img-logo-prog"></div>
                 <div class="margin-10 flex-grow5"><div class="textTitle"><?php echo $p["tituloPrograma"];?></div></div>
                     

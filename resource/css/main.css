@@ -189,7 +189,7 @@ h2 {
   .textTitle {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     color: #333333;
     position: relative;
@@ -330,4 +330,12 @@ h2 {
   .width60 {
     width: 100%;
   }
+}
+
+.textRed {
+  color: red;
+}
+
+.marginLive {
+  margin-left: 10px;
 }
