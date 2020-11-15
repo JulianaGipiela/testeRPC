@@ -2,7 +2,10 @@
     date_default_timezone_set('America/Sao_Paulo');
     $datetoAPI = date('Y-m-d');
     if(isset($_GET["date"])) {
-        $datetoAPI = date('Y-m-d', strtotime($_GET["date"]));
+        $dateVal = DateTime::createFromFormat('Y-m-d', $_GET["date"]);
+        if($dateVal !== false){
+            $datetoAPI = date('Y-m-d', strtotime($_GET["date"]));
+        }        
     }
     $isToDay = ($datetoAPI == date('Y-m-d'));    
     $apiContent = file_get_contents("https://epg-api.video.globo.com/programmes/1337?date=".$datetoAPI);
