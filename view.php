@@ -18,7 +18,7 @@
     <body>
         <header>
             <div class="menu">
-                <img src="resource/img/logo_web.png" class="img-logo">
+                <a href="https://redeglobo.globo.com/rpc/" target="_blank"><img src="resource/img/logo_web.png" class="img-logo"></a>
             </div>  
         </header>
     
